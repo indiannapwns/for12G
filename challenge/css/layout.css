@@ -1,0 +1,142 @@
+*{text-align: center}
+
+body {
+	background-color: #1E1E1E;
+	background-image: url(../images/bg.jpg);
+}
+
+#graphWrapper {
+  height:480px;
+  width: 320px;
+
+  background-color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#graph {
+       height:100px;
+    width: 5px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.meter {
+  height: 10px;
+  width: 5px;
+  display: block;
+  border: 1px solid #000000;
+}
+
+
+.box {
+    height:1px;
+    width: 50px;
+    display: inline-block;
+    margin-bottom: -20px;
+}
+
+#red {
+    background-color:#FF0000;
+}
+
+#blue {
+    background-color:#0000FF;
+}
+
+#yellow {
+    background-color:#E2BE22;
+}
+
+#green {
+    background-color:#008800;
+}
+
+#hoverLove {
+
+           height: 200px;
+           width: 320px;
+           position: block;
+           margin-TOP: 35px;
+}
+
+#hirling{
+         height: 20px;
+         width: 100px;
+}
+
+.go{
+animation-name: floaty;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-play-state: running;
+/* Firefox: */
+-moz-animation-name: floaty;
+-moz-animation-duration: 5s;
+-moz-animation-timing-function: linear;
+-moz-animation-play-state: running;
+/* Safari and Chrome: */
+-webkit-animation-name: floaty;
+-webkit-animation-duration: 5s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-play-state: running;
+/* Opera: */
+-o-animation-name: floaty;
+-o-animation-duration: 5s;
+-o-animation-timing-function: linear;
+-o-animation-play-state: running;
+/* IE: */
+-ms-animation-name: floaty;
+-ms-animation-duration: 5s;
+-ms-animation-timing-function: linear;
+-ms-animation-play-state: running;
+}
+
+
+@keyframes floaty
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-moz-keyframes floaty /* Firefox */
+{
+0%   { -moz-transform: translateX(0px) scale(1);}
+25%  { -moz-transform: translateX(50px) scale(1.5);}
+50%  { -moz-transform: translateX(75px) scale(2);}
+75%  { -moz-transform: translateX(100px) scale(2.5);}
+100% { -moz-transform: translateX(125px) scale(3);}
+}
+
+@-webkit-keyframes floaty /* Safari and Chrome */
+{
+0%   { -webkit-transform: translateX(0px) scale(1);}
+25%  { -webkit-transform: translateX(50px) scale(1.5);}
+50%  { -webkit-transform: translateX(75px) scale(2);}
+75%  { -webkit-transform: translateX(100px) scale(2.5);}
+100% { -webkit-transform: translateX(125px) scale(3);}
+}
+
+@-o-keyframes floaty /* Opera */
+{
+0%   { -o-transform: translateX(0px) scale(1);}
+25%  { -o-transform: translateX(50px) scale(1.5);}
+50%  { -o-transform: translateX(75px) scale(2);}
+75%  { -o-transform: translateX(100px) scale(2.5);}
+100% { -o-transform: translateX(125px) scale(3);}
+}
+
+@-ms-keyframes floaty /* Opera */
+{
+0%   { -ms-transform: translateX(0px) scale(1);}
+25%  { -ms-transform: translateX(50px) scale(1.5);}
+50%  { -ms-transform: translateX(75px) scale(2);}
+75%  { -ms-transform: translateX(100px) scale(2.5);}
+100% { -ms-transform: translateX(125px) scale(3);}
+}
